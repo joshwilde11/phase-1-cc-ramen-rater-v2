@@ -34,20 +34,13 @@
     Insert comment here
   </p>
 
-
   <form id="new-ramen">
-    <h4>Add New Ramen</h4>
-    <label for="new-name">Name: </label>
-    <input type="text" name="name" id="new-name" />
-    <label for="new-restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" />
-    <label for="new-image">Image: </label>
-    <input type="text" name="image" id="new-image" />
-    <label for="new-rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
-    <input type="submit" id='submit-button' value="Create" />
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="text" name="restaurant" placeholder="Restaurant" required />
+    <input type="text" name="image" placeholder="Image URL" required />
+    <input type="number" name="rating" placeholder="Rating" required />
+    <textarea name="comment" placeholder="Comment" required></textarea>
+    <button type="submit">Create</button>
   </form>
 
 </body>
